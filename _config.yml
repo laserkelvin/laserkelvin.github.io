@@ -18,17 +18,17 @@ repo: https://github.com/laserkelvin   # used in footer
 nav_menu:
   - name: Posts
     url: /
-    icon: /i/icons.svg#posts # icons should be 24x24 px.
+    icon: /i/icons.svg  # icons should be 24x24 px.
   - name: Projects
     url: /projects
-    icon: /i/icons.svg#portfolio
+    icon: /i/icons.svg
   - name: GitHub
     url: https://github.com/laserkelvin
-    icon: /i/icons.svg#github
+    icon: /i/icons.svg
     outbound: true      # this key sets a link to open in a new window.
   - name: About me
     url: /about
-    icon: /i/icons.svg#email
+    icon: /i/icons.svg
 
 # Objects listed here will appear on the /projects.html page.
 projects:
