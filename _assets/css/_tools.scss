@@ -43,13 +43,13 @@
 
 @mixin fontface($face: $default_font_face) {
     @if $face==sans-serif {
-        font-family: "Open Sans", sans-serif;
+        font-family: "Roboto", sans-serif;
     }
     @else if $face==serif {
-        font-family: "Libre Baskerville", Georgia, serif
+        font-family: "Playfair Display", Georgia, serif
     }
     @else if $face==monospace {
-        font-family: "Source Sans Pro", monospace;
+        font-family: "Roboto Mono", monospace;
     }
 }
 
