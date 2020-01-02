@@ -75,7 +75,6 @@ using a [Pandoc letter template](https://github.com/aaronwolen/pandoc-letter) ov
 a Word document (shudder), whilst still keeping things like letter heads, signatures,
 etc. accessible.
 
-
 Working collaboratively
 -----------------------
 
@@ -91,6 +90,23 @@ the ability to save and label versions of text, I usually use this feature to
 control iterations of manuscripts, as well as pre- and post-submission for publications
 as a way to keep track of changes recommended by reviewers.
 
-Personally, I'm not a fan of the "Track Changes" feature by Overleaf as it quickly
-gets visually cluttered when multiple people are editing simultaneously.
+Now, for some cons. As amazing as Overleaf is, it is a subscription based
+service and people at instutitions without coverage may find themselves missing
+out on most of the quality of life features, and in particular having a limited
+number of collaborators on a documet is somewhat restrictive. That being said,
+personally, some features like "Track Changes" I don't mind missing out on, as
+it quickly gets visually cluttered when multiple people are editing
+simultaneously.
+
+Epilogue
+--------
+
+For the beginner working locally or at instutitions without a subscription to
+Overleaf, I highly recommend learning more about writing in markdown -- it is
+an extremely simple syntax (basically plain text) that can be converted into
+many other formats. With packages like
+[``reveal-md``](https://github.com/webpro/reveal-md) you could even convert
+your documents into a presentation deck! You can always include some snippets
+of LaTeX for greater customization. As always, feel free to reach out to me if
+you have any questions, comments, or suggestions!
 
