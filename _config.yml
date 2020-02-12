@@ -38,6 +38,7 @@ projects:
     category: Machine learning
   - title: Bayesian Analysis of Low-Cost Electronic Structure Calculations
     teaser: Probabilistic modeling of uncertainties in spectroscopic constants.
+    url: https://pubs.acs.org/doi/10.1021/acs.jpca.9b09982
     role: Lead
     category: Bayesian modeling
   - title: Open-source Analysis Tools for Spectroscopy
