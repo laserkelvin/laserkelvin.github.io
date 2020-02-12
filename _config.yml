@@ -2,7 +2,7 @@
 # Theme Customization #
 #######################
 
-title: "!/bin/kelvin.sh"                          # used in <title> tag & site header
+title: "kelvin.__init__()"                          # used in <title> tag & site header
 author: Kelvin Lee                        # used in a <meta> tag & /feed.xml
 description: >                              # used in a <meta> tag & /feed.xml
   Making sense of data with uncertainty.
