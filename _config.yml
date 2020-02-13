@@ -2,11 +2,11 @@
 # Theme Customization #
 #######################
 
-title: "kelvin.__init__()"                          # used in <title> tag & site header
+title: "Kelvin Lee"                          # used in <title> tag & site header
 author: Kelvin Lee                        # used in a <meta> tag & /feed.xml
 description: >                              # used in a <meta> tag & /feed.xml
   Making sense of data with uncertainty.
-slogan: ""        # used in site header, beside title
+slogan: "Certainty about uncertainty"        # used in site header, beside title
 avatar: /i/avatar.png                       # used as portrait in site header
 banner: /i/sma.jpg                    # used as background in site header
 url: https://laserkelvin.github.io              # used by plugins to generate feed.xml and sitemap.xml
@@ -32,8 +32,12 @@ nav_menu:
 
 # Objects listed here will appear on the /projects.html page.
 projects:
-  - title: Machine Learning in Spectroscopy
-    teaser: Using neural networks and Bayesian statistics to solve spectroscopic problems.
+  - title: Spectral pattern recognition
+    teaser: Probabilistic deep learning models for pattern matching in broadband spectra.
+    role: Lead
+    category: Machine Learning
+  - title: Molecule identification in complex mixtures 
+    teaser: Combining Bayesian inference and neural networks to learn the identities of unknown molecules.
     role: Lead
     category: Machine learning
   - title: Bayesian Analysis of Low-Cost Electronic Structure Calculations
