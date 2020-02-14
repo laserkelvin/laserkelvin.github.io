@@ -4,8 +4,7 @@
 
 title: "Kelvin Lee"                          # used in <title> tag & site header
 author: Kelvin Lee                        # used in a <meta> tag & /feed.xml
-description: >                              # used in a <meta> tag & /feed.xml
-  Making sense of data with uncertainty.
+description: ""                              # used in a <meta> tag & /feed.xml
 slogan: "Certainty about uncertainty"        # used in site header, beside title
 avatar: /i/avatar.png                       # used as portrait in site header
 banner: /i/sma.jpg                    # used as background in site header
