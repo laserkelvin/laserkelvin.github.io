@@ -43,10 +43,10 @@
 
 @mixin fontface($face: $default_font_face) {
     @if $face==sans-serif {
-        font-family: "Roboto", sans-serif;
+        font-family: "Source Sans Pro", "Roboto", sans-serif;
     }
     @else if $face==serif {
-        font-family: "Playfair Display", Georgia, serif
+        font-family: "EB Garamond", "Playfair Display", Georgia, serif
     }
     @else if $face==monospace {
         font-family: "Roboto Mono", monospace;
@@ -70,7 +70,7 @@
     }
     @else if $weight==bold {
         @if $color==default {
-            color: #555;
+            color: #f3e79b;
         }
         @else {
             color: $color;
