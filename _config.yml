@@ -31,11 +31,11 @@ nav_menu:
 
 # Objects listed here will appear on the /projects.html page.
 projects:
-  - title: Spectral pattern recognition
+  - title: Spectral Pattern Recognition
     teaser: Probabilistic deep learning models for pattern matching in broadband spectra.
     role: Lead
     category: Machine Learning
-  - title: Molecule identification in complex mixtures 
+  - title: Molecule Identification in Complex Mixtures 
     url: https://github.com/laserkelvin/rotconml
     teaser: Combining Bayesian inference and neural networks to learn the identities of unknown molecules.
     role: Lead

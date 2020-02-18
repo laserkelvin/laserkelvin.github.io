@@ -111,6 +111,11 @@ As a static site generator, Jekyll has no means to provide a commenting system. 
 
    ![](https://raw.githubusercontent.com/rlue/i/master/solana/comments-2.png)
 
+### Notes
+
+Video embedding is done using [`html5media`](https://github.com/etianen/html5media/wiki/embedding-video)
+
+
 Modifying
 ---------
 
