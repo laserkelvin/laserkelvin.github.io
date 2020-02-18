@@ -13,9 +13,11 @@ Parallelization
 
 Now, for UN*X users, a lot of people probably just use `tar` like so:
 
-```
+~~~ bash
+
 tar -cf new_tarball.tar.gz file1 file2 file3
-```
+
+~~~
 
 By itself, `tar` doesn't offer the best compression nor speed. There are a few more modern approaches that promise to be better. One approach, for example, are parallel implementations: every computer has multiple cores/threads these days, why not use them? Back in 2015, [this blog post](https://www.peterdavehello.org/2015/02/use-multi-threads-to-compress-files-when-taring-something/) showed a quick benchmark of how parallel implementations of common compression algorithms perform:
 
@@ -25,7 +27,21 @@ By itself, `tar` doesn't offer the best compression nor speed. There are a few m
 | `bzip2` | `pbzip2` |
 | `xz` | `pxz` |
 
-With some pretty dated hardware, you could still get >3x faster.
+With some pretty dated hardware, you could still get >3x faster. The simple thing about this is the plug-and-play nature of it all; you can get `pigz`, `pbzip2` through your package manager (e.g. `sudo apt install pigz`) or if you don't have `sudo` access, you could get the binaries from their websites or with `conda`:
+
+~~~ bash
+
+conda install -c bioconda pigz
+
+~~~
+
+Replace your regular `tar` command with this:
+
+~~~ bash
+
+tar -I pigz -cf tarball.tar.gz file1 file2 file3
+
+~~~
 
 Newer algorithms
 ----------------
@@ -41,10 +57,12 @@ One scenario I find myself in often is taking many files and throwing them toget
 
 So, something like this:
 
-```
+~~~ bash
+
 tar -cf single_tarball.tar file1 file2 ... file999999
 
 lrztar single_tarball.tar
-```
 
-Should generate a `single_tarball.tar.lrz` that is more compressed than the original.
+~~~
+
+Should generate a `single_tarball.tar.lrz` that is more compressed than the original, and because you're using parallelization to do many smaller files, ensures that your high compression algorithm is most spending its time working on a single file rather than many files.
