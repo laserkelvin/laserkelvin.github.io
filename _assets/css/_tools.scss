@@ -70,7 +70,7 @@
     }
     @else if $weight==bold {
         @if $color==default {
-            color: #f3e79b;
+            color: #5c53a5;
         }
         @else {
             color: $color;

@@ -2,7 +2,7 @@
 # Theme Customization #
 #######################
 
-title: "Kelvin Lee"                          # used in <title> tag & site header
+title: "K.Lee"                          # used in <title> tag & site header
 author: Kelvin Lee                        # used in a <meta> tag & /feed.xml
 description: "Certainty about uncertainty"                              # used in a <meta> tag & /feed.xml
 slogan: ""                                # used in site header, beside title
@@ -36,6 +36,7 @@ projects:
     role: Lead
     category: Machine Learning
   - title: Molecule identification in complex mixtures 
+    url: https://github.com/laserkelvin/rotconml
     teaser: Combining Bayesian inference and neural networks to learn the identities of unknown molecules.
     role: Lead
     category: Machine learning
