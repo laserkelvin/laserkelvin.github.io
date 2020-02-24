@@ -346,7 +346,8 @@
     display: inline-block;
     @include fontface(sans-serif);
     @include fontweight(bold, sans-serif);
-    text-transform: uppercase;
+    font-variant: small-caps;
+    font-feature-settings: "smcp" on;
     padding: 0.5rem 1rem;
     @include transition(padding-bottom, 0.25rem, 100ms);
     border: none;
