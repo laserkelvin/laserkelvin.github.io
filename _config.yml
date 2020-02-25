@@ -53,19 +53,19 @@ projects:
   - title: Aromatic Chemistry in Space
     teaser: Studying the physics and chemistry of aromatic molecules in space with the Green Bank Telescope.
     url: https://greenbankobservatory.org/science/gbt-surveys/gotham-survey/
-    role: Laboratory Experiments & Electronic Structure
+    role: Laboratory Work
     category: Astrochemistry
   - title: Gas-Phase Mechanisms for Molecule Formation
     teaser: Spectroscopic investigations into how molecules form in the gas-phase.
     url: https://pubs.rsc.org/en/content/articlelanding/2019/cp/c8cp06070c#!divAbstract
-    role: Laboratory Experiments & Electronic Structure
+    role: Laboratory Work
     category: Astrochemistry
   - title: Exotic Molecules in the Interstellar Medium
     url: https://arxiv.org/abs/1811.12798
     teaser: Searches for transient molecules that reveal new chemical aspects of interstellar space.
-    role: Laboratory Experiments & Electronic Structure
+    role: Laboratory Work
     category: Astrochemistry
-  - title: Grow of Carbon Chains
+  - title: Growth of Carbon Chains
     url: https://pubs.rsc.org/en/content/articlelanding/2019/CP/C9CP03607E#!divAbstract
     teaser: Understanding how carbon chains grow in length in the gas-phase.
     role: Lead
