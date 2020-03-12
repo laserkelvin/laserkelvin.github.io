@@ -2,8 +2,8 @@
 title: Why Variational Autoencoders Need to Reparameterize
 date: 2020-03-11 21:23
 category: machine learning 
-tags: [deep learning, autoencoders, ]
-teaser: My somewhat belated epiphany on the reparameterization trick.
+tags: [deep learning, autoencoders, probabilistic models]
+teaser: My somewhat belated epiphany on the reparameterization trick—learned through doing!
 ---
 
 Today, I thought I had a stroke of brilliance by starting to develop a `Linear` layer in PyTorch that would have its parameters drawn from a Gaussian. My idea was to implement a Bayesian neural network, where the parameters of the network are treated as probability distributions, rather than just simple point estimates. In terms of Bayes rule:
@@ -65,6 +65,7 @@ I'd previously learned about variational autoencoders and reinforcement learning
 Conceptually, the code I wrote would work, albeit would need something like Monte Carlo integration to evaluate the full $\mu$ and $\log \sigma$ space including their gradients — a task that doesn't appear nearly as trivial anymore. I knew it was hard before, but it wasn't until I spent an hour working on this to realize how hard it was!
 
 More papers to read:
+
 [Variational Bayesian Inference with Stochastic Search](https://icml.cc/2012/papers/687.pdf)
 
 
