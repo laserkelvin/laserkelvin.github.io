@@ -1,9 +1,9 @@
 ---
-title: Compressing Files in Linux
-date: 2020-02-18 17:45
-category: linux 
-tags: [workflows, linux]
-teaser: A quick overview of file compression workflows with Linux
+title: Why Variational Autoencoders Need to Reparameterize
+date: 2020-03-11 21:23
+category: machine learning 
+tags: [deep learning, autoencoders, ]
+teaser: My somewhat belated epiphany on the reparameterization trick.
 ---
 
 Today, I thought I had a stroke of brilliance by starting to develop a `Linear` layer in PyTorch that would have its parameters drawn from a Gaussian. My idea was to implement a Bayesian neural network, where the parameters of the network are treated as probability distributions, rather than just simple point estimates. In terms of Bayes rule:
@@ -12,7 +12,7 @@ $$
 p(\theta \vert x) = \frac{p(x \vert \theta) p(\theta)}{p(x)}
 $$
 
-where $p(\theta \vert x)$ is the posterior distribution of parameters conditioned on our data $x$; the distribution we want to ultimately draw samples from to evaluate our neural network. In my naivety I thought this would be as straightforward as my abstraction:  weights and biases had a $\mu$ and a $\log \sigma$ `Tensor` that would be the learned parameters of the layer:
+where $p(\theta \vert x)$ is the posterior distribution of parameters conditional on our data $x$; the distribution we want to ultimately draw samples from to evaluate our neural network. In my naivety I thought this would be as straightforward as my abstraction:  weights and biases had a $\mu$ and a $\log \sigma$ `Tensor` that would be the learned parameters of the layer:
 
 ```python
 self.weight_mu = nn.Parameter(torch.Tensor(out_features, in_features))
