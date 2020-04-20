@@ -1,5 +1,5 @@
 ---
-project_name: Teaching Deep Learning
+project_name: Teaching Neural Networks
 image: /assets/projects/learning_nn.png
 github_link: https://github.com/laserkelvin/learning-neural-networks
 ---
