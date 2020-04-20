@@ -4,6 +4,7 @@ date: 2020-02-18 17:45
 category: linux 
 tags: [workflows, linux]
 teaser: A quick overview of file compression workflows with Linux
+noindex: true
 ---
 
 Here's a quick post about a topic I find myself revisiting every few months: how to compress large batches of files efficiently. As I perform lots of calculations on a computing cluster, I like to routinely back things up at around publication time: that way I can have access to the data at the point where my paper was submitted, for example, and come back to it at a later date.

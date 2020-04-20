@@ -3,7 +3,9 @@ title: Why Variational Autoencoders Need to Reparameterize
 date: 2020-03-11 21:23
 category: machine learning 
 tags: [deep learning, autoencoders, probabilistic models]
-teaser: My somewhat belated epiphany on the reparameterization trick—learned through doing!
+lead_text: My somewhat belated epiphany on the reparameterization trick—learned through doing!
+layout: post
+noindex: true
 ---
 
 Today, I thought I had a stroke of brilliance by starting to develop a `Linear` layer in PyTorch that would have its parameters drawn from a Gaussian. My idea was to implement a Bayesian neural network, where the parameters of the network are treated as probability distributions, rather than just simple point estimates. In terms of Bayes rule:
