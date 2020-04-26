@@ -1,30 +1,21 @@
-# Hydejack Starter Kit
+# Website Updating Workflow
 
-A quicker, cleaner way to get started blogging with [Hydejack](https://hydejack.com/).
+## Testing locally
 
-## Quick Start
-### Running locally
-1. Clone repository (git users), or [download] and unzip.
-2. Open terminal, `cd` into root directory (where `_config.yml` is located)
-3. Run `bundle install` [^1]
-4. Run `bundle exec jekyll serve`
-5. Open <http://localhost:4000/>
+Running `bundle exec jekyll serve` will build and serve the website locally using `jekyll`. This will let you preview what the website will look like before deploying.
 
-### GitHub Pages
-1. Fork this repository.
-2. Go to **Settings**, rename repository to `<your github username>.github.io` (without the `<` `>`)
-3. Edit `_config.yml` (you can do this directly on GitHub)
-    1. Change `url` to `https://<your github username>.github.io` (without the `<` `>`)
-    2. Change `baseurl` to `''` (empty string)
-    3. **Commit changes**.
-4. Go to **Settings** again, look for **GitHub Pages**, set **Source** to **master branch**.
-5. Click **Save** and wait for GitHub to set up your new blag.
+## Adding new projects
 
-## What's next?
-* Open files and read the comments
-* Read the [docs](https://hydejack.com/docs/)
-* Buy the [PRO version](https://hydejack.com/download/) to get the project and resume layout, newsletter subscription box, custom forms, and more.
+New projects can be added by writing markdown files in `_projects` (just follow the other existing files). You can specify images and links to accompany presentation. These are based on my own personal layout, which is simple and can be found in `_layouts/projects.html`.
 
-[^1]: Requires Bundler. Install with `gem install bundler`.
+## Adding new blog posts
 
-[download]: https://github.com/hydecorp/hydejack-starter-kit/archive/master.zip
+Same procedure as normal—add new blog posts as markdown files in the `_posts` folder.
+
+## Styling
+
+CSS is located in `_sass`
+
+## Resources
+
+I've tried to organize different images and resources into folders in the `assets` directory. For project images, place them in `assets/projects`, and for blog posts `assets/blogs`. For all web page general resources, put them in `assets/img`.

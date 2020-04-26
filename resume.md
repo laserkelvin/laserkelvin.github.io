@@ -1,10 +1,13 @@
-# Résumé
+Kin Long Kelvin Lee
+=========================
 
-Postdoctoral Researcher &#8212; Center for Astrophysics Harvard & Smithsonian
+> Postdoctoral Researcher &#8212; Center for Astrophysics | Harvard & Smithsonian
 
-[https://laserkelvin.github.io](https://laserkelvin.github.io)
+> https://laserkelvin.github.io
 
-<kinlee@cfa.harvard.edu> • +1 857-505-9734 • 161 Kelton Street, Allston MA 02134
+> <kinlee@cfa.harvard.edu> • +1 857-505-9734 • 161 Kelton Street, Allston MA 02134
+
+----
 
 Professional Experience
 --------------------
@@ -13,13 +16,11 @@ Since Feb 2017
 :   ### Center for Astrophysics | Harvard & Smithsonian&#8212;Cambridge, MA
     _Postdoctoral Research Fellow_
 
-    - Worked on novel research projects at the intersection of astronomy, chemistry, and data science.
     - [Co-authored 16 publications; six as lead author](https://scholar.google.com/citations?user=cB90fKUAAAAJ&hl=en), one as project leader, and remainder as part of large teams.
     - Lead successful grant proposals as co-investigator from the Smithsonian Institution, National Science Foundation, and NASA; _raised over $500,000 USD_ in public funding.
-    - Developed machine learning models and open-source frameworks for automated analysis of wide band spectroscopic data.
+    - Developed machine learning models and open-source frameworks for automated analysis of wide band spectroscopic data; improved analysis rate from months to weeks.
     - Created productive collaborations between the Center for Astrophysics and international groups, facilitated by open-sourced tools I developed.
     - Mentored early career researchers on scientific and numerical Python, and reproducible workflows.
-    - Performed quantum chemical calculations to guide microwave spectroscopy experiments of transient molecules.
     - Reviewed new research articles in major publications: role as referee/reviewer on 13 manuscripts.
 
 Aug 2016&#8212;Feb 2017
@@ -55,6 +56,8 @@ Education
 
     Title: _Roaming Reaction Dynamics in Small Aldehydes_ under the supervision of Professor Scott Kable and Professor Meredith Jordan.
 
+<br>
+<br>
 
 Selected Open-source Contributions
 -------------------------
@@ -111,7 +114,7 @@ Written communication
 Oral Presentations
 :   Reviewer for SciPy 2020.
 :   Presented scientific results at over 18 international conferences in Chemistry and Astronomy.
-:   Presented workshops on reproducible Python and code practices to undergraduates.
+:   Presented workshops on reproducible Python and code practices to undergraduates at the Center for Astrophysics | Harvard & Smithsonian.
 
 Experimental Techniques
 :   Pulsed laser maintenance and operation.
