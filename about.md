@@ -29,13 +29,9 @@ The Smithsonian's Submillimeter Array on the summit of Mauna Kea, August 2018. P
 
 Prior to my postdoctoral fellowship, I obtained my PhD in Chemistry at the University of New South Wales, Australia. There, I worked on understanding how atmospheric pollutants like nitrous oxide undergo decompostion by UV irradiation.
 
-## Visual Display of Information
-
 Outside of science and computation, I am extremely particular about presentation of information (plots, graphics), text (typography), and writing. I have a great deal of respect for [Edward Tufte](https://www.edwardtufte.com/) and [Matthew Butterick](https://practicaltypography.com/) who are—in my humble opinion—masters of data visualization and typography. For writing, I swear by [The Elements of Style](https://en.wikipedia.org/wiki/The_Elements_of_Style), which is one of the shortest and most powerful handbooks I've ever owned. Whenever I get the chance, I try and imbue everything I do with small touches that represent ideas from these authors (this website for instance).
 
-## Personal
-
-When I'm not working, I enjoy traveling to new places and seeing new sights with my wife, particularly to places with great scenery (Canadian Rockies, Finland) and great food (Japan, London, and Hong Kong come to mind). During my time at the CfA, I was fortunate enough to travel frequently to various sites for observing and conferences; some of my highlights have been Mauna Kea in Hawaii (~14,000 ft) and Green Bank in West Virginia.
+When I'm not working, I enjoy traveling to new places and seeing new sights with my wife, particularly to places with great scenery (Canadian Rockies, Finland) and great food (Japan, London, and Hong Kong come to mind). During my time at the CfA, I was fortunate enough to travel frequently to various sites for observing and conferences; some of my highlights have been Mauna Kea in Hawaii (~14,000 ft) and Green Bank in West Virginia. These were definitely highlights of my scientific career; getting to go to places you wouldn't necessarily go without a reason to!
 
  ![finland](/assets/img/finland.jpg){:.lead data-width="800" data-height="100"}
 Saariselkä, Finland. Christmas 2019. Photo by me!
