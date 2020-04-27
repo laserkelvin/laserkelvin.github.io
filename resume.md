@@ -13,18 +13,17 @@ Professional Experience
 --------------------
 
 Since Feb 2017
-:   ### Center for Astrophysics | Harvard & Smithsonian&#8212;Cambridge, MA
+:   ### Center for Astrophysics | Harvard & Smithsonian—Cambridge, MA
     _Postdoctoral Research Fellow_
 
+    - Developed machine learning models and open-source frameworks for automated spectroscopic analysis and molecule discovery in space and in the laboratory; workflow reduced analysis time from months to weeks.
     - [Co-authored 16 publications; six as lead author](https://scholar.google.com/citations?user=cB90fKUAAAAJ&hl=en), one as project leader, and remainder as part of large teams.
     - Lead successful grant proposals as co-investigator from the Smithsonian Institution, National Science Foundation, and NASA; _raised over $500,000 USD_ in public funding.
-    - Developed machine learning models and open-source frameworks for automated analysis of wide band spectroscopic data; improved analysis rate from months to weeks.
-    - Created productive collaborations between the Center for Astrophysics and international groups, facilitated by open-sourced tools I developed.
     - Mentored early career researchers on scientific and numerical Python, and reproducible workflows.
     - Reviewed new research articles in major publications: role as referee/reviewer on 13 manuscripts.
 
-Aug 2016&#8212;Feb 2017
-:   ### University of New South Wales&#8212;Sydney, Australia
+Aug 2016‒Feb 2017
+:   ### University of New South Wales—Sydney, Australia
     _Postdoctoral Research Fellow_
 
     - Researched photochemistry of atmospheric molecules; destruction of pollutants under UV irradiation by lasers.
@@ -43,20 +42,19 @@ Education
 
     Five deep learning courses taught by Andrew Ng, deeplearning.ai; [completed April 3, 2020.](https://coursera.org/share/2657b111258563efbaa8731dfd657c1b)
 
-2013&#8212;2016
-:   ### University of New South Wales&#8212;Sydney, Australia
+2013‒2016
+:   ### University of New South Wales—Sydney, Australia
     _Doctor of Philosophy in Chemistry_
 
     Title: _Spectroscopy and Photodissociation of Small Atmospheric Molecules_ under the supervision of Professor Scott Kable and Professor Meredith Jordan.
 
 
-2008&#8212;2012
-:   ### University of Sydney&#8212;Sydney, Australia
+2008‒2012
+:   ### University of Sydney—Sydney, Australia
     _Bachelor of Science; First Class Honours in Chemistry & Plant Sciences_
 
     Title: _Roaming Reaction Dynamics in Small Aldehydes_ under the supervision of Professor Scott Kable and Professor Meredith Jordan.
 
-<br>
 <br>
 
 Selected Open-source Contributions
@@ -66,60 +64,52 @@ Python
 :   [PySpecTools](https://laserkelvin.github.io/PySpecTools/) is a library I
     developed to help analyze broadband spectral data with an emphasis on
     reproducibility and collaboration.
-:   [FTSpecViewer](https://github.com/laserkelvin/FTSpecViewer) application written in Python and Qt5 to process Fourier-transform microwave data.
-:   [Repro-repo](https://github.com/laserkelvin/repro-repo) cookie-cutter template I designed to promote simple reproducible projects.
-:   [Spectron3000](https://github.com/laserkelvin/Spectron3000) web app written with Dash for viewing astronomical spectra.
-:   [RMG](https://github.com/laserkelvin/rmg) Python program for graph-based generation of molecules.
+:   [RotConML](https://github.com/laserkelvin/rotconML) is a project that uses quantum chemical datasets to teach probabilistic deep learning models to identify molecules from spectroscopic data.
+:   [Learning Neural Networks](https://github.com/laserkelvin/learning-neural-networks) is a resource I developed for teaching beginners deep learning from scratch.
+:   [SpectraViewer](https://github.com/laserkelvin/SpectraViewer) is a lightweight Dash web app for inspecting and performing signal processing on legacy laboratory data.
 
 My [Github repository](https://github.com/laserkelvin) contains all of the coding projects I have worked on.
 
-Selected Recent Projects
+Selected Recent Publications 
 ------------------------
 
-- [Characterization of miniature spectrometer designed for spacecraft/rover missions](https://pubs.acs.org/doi/abs/10.1021/acs.jpca.9b10548)
-  - Spectrometer designed by the Jet Propulsion Laboratory for trace detection of salts and organic molecules using rotational spectroscopy.
-- [Identification of unknown molecules using probabilistic deep learning models](https://github.com/laserkelvin/rotconml)
-  - Developed high performance, probabilistic neural network architectures to identify unknown molecules with rotational spectroscopy.
+- [Identification of unknown molecules using probabilistic deep learning models](https://pubs.acs.org/doi/10.1021/acs.jpca.0c01376)
+  - Developed high throughput, probabilistic neural network architectures to identify unknown molecules with rotational spectroscopy from computational chemistry data.
 - [Accuracy and uncertainty benchmarking of quantum chemical methods with Bayesian methods.](https://pubs.acs.org/doi/10.1021/acs.jpca.9b09982)
   - Determined systematic uncertainties with low-cost electronic structure theory using Hamiltonian Monte Carlo models.
 - [Developed open-source tools for analyzing broadband spectral data](https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.9b00586)
-  - Founder of [PySpectools, a Python library](https://laserkelvin.github.io/PySpecTools/) that helps manage analysis of rotational spectra consisting of hundreds of spectral features and distinct species.
-- [Spectroscopy and quantum chemistry expert of GOTHAM and ARKHAM observing projects of Taurus Molecular Cloud-1](https://gotham.astrochem.net)
-  - Provided laboratory and theoretical critical for the analysis of large scale observing results.
+  - Developer of [PySpectools, a Python library](https://laserkelvin.github.io/PySpecTools/) that helps manage analysis of rotational spectra consisting of hundreds of spectral features and distinct species.
+- [Conservation of zero-point energy in quasiclassical trajectory simulations](https://doi.org/10.1063/1.5023508)
+  - Created a new, low-cost method for "patching" zero-point energy leakage in molecular dynamics simulations, applied to roaming reaction dynamics.
 
 Skills & Expertise
 ------------------
+Languages
+:   English and Cantonese as native languages.
+:   Fluent in conversational Japanese.
+
 Computing
 :   Distributed computing workflows on national and institiutional HPC platforms.
-:   Massively parallel quantum chemistry calculations.
-:   Efficient computational workflows with `numpy` and `julia`.
+:   Massively parallel quantum chemistry calculations using CFOUR, Gaussian, Psi4.
 :   Source control managment with `git` and `dvc`.
 :   Reproducible environments with `conda` and `docker`.
-:   Exploratory data analysis in notebook environments.
 :   General object-oriented programming and development with Python 3.
+:   Linux shell workflows (`bash`, `zsh`).
 
 Data analysis
-:   Exploratory data analysis and data pipeline design with `numpy`, `dask`, `pandas`.
-:   Data visualization using `matplotlib`, `plotly`, and `bokeh`.
-:   Baseline machine learning models with `scikit-learn`.
-:   Deep learning models with PyTorch and Tensorflow.
-:   Probabilstic model (e.g. Monte Carlo methods) development with `pymc3`, `pyro`, and `Flux.jl`.
+:   Exploratory data analysis and data pipeline design with scientific Python and Julia stack.
+:   Machine/Deep learning models with PyTorch, Keras, scikit-learn.
+:   Probabilstic model development with `pymc3`, `pyro`, and `Flux.jl`.
 
 Written communication
-:   Author of 21 peer-reviewed articles for expert audiences; 94 citations to date.
+:   Author of 21 peer-reviewed articles for expert audiences; 98 citations to date. [[Link to Google Scholar]](https://scholar.google.com/citations?user=cB90fKUAAAAJ&hl=en)
 :   Review Editor of open-access journal “Frontiers of Astronomy and Space Science”.
 :   Writer on [Medium](https://medium.com/@kin.long.kelvin.lee) and TowardsDataScience for general audiences.
-:   Proficient in document workflows with LaTeX, `pandoc`, and Markdown.
 
 Oral Presentations
-:   Reviewer for SciPy 2020.
+:   Presenter at SciPy 2020.
 :   Presented scientific results at over 18 international conferences in Chemistry and Astronomy.
 :   Presented workshops on reproducible Python and code practices to undergraduates at the Center for Astrophysics | Harvard & Smithsonian.
-
-Experimental Techniques
-:   Pulsed laser maintenance and operation.
-:   High vacuum technology.
-:   High speed radio and microwave electronics.
 
 ----
 
