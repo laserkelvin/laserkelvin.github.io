@@ -9,7 +9,7 @@ title: About
 # Write a short (~150 characters) description of each blog post.
 # This description is used to preview the page on search engines, social media, etc.
 description: >
-  Postdoctoral researcher at the Center for Astrophyics
+  Postdoctoral researcher at MIT
 
 # You can show the description on the page by deleting this line:
 hide_description: true
@@ -19,7 +19,7 @@ hide_description: true
 The Home of Kelvin Lee
 {:.lead}
 
-I am a postdoctoral researcher at the Center for Astrophysics, Harvard & Smithsonian, where I research the chemistry of space locally—with high vacuum spectrometers—and remotely with radio telescopes like the 100 m Green Bank Telescope.
+I am a postdoctoral researcher at MIT, formerly at the Center for Astrophysics, Harvard & Smithsonian. I research the chemistry of space somewhat locally—with high vacuum spectrometers—and remotely with radio telescopes like the 100 m Green Bank Telescope.
 
 To study the complex physics and chemistry of molecular clouds, star forming regions, and stars, I've developed a suite of Python libraries and deep learning models that help us churn through all of the data we acquire, with the hopes of reducing months of monotonous analysis to hours and minutes.
 

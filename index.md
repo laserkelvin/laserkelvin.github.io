@@ -9,7 +9,7 @@ title: Landing
 # Write a short (~150 characters) description of each blog post.
 # This description is used to preview the page on search engines, social media, etc.
 description: >
-  Postdoctoral researcher at the Center for Astrophyics
+  Postdoctoral researcher at Massachusetts Institute of Technology
 
 # You can show the description on the page by deleting this line:
 hide_description: true
@@ -22,7 +22,7 @@ cover: true
 
 ## Data Science/Machine Learning/Chemistry/Astronomy Researcher
 
-I'm a postdoctoral researcher working at the Center for Astrophysics, Harvard & Smithsonian, where I develop machine learning models to analyze large volumes of laboratory and astronomy data that help answer some big questions with small molecules.
+I'm a postdoctoral researcher working in the Department of Chemistry at MIT, where I develop machine learning models to analyze large volumes of laboratory and astronomy data that help answer some big questions with small molecules.
 
 The things that drive me, not necessarily in any order:
 
