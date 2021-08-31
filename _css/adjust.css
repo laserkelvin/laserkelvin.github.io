@@ -33,6 +33,19 @@
 
 html {
   background-color: var(--bg-color);
+  font-size: clamp(12px, 12px + 0.1vw, 5vw);
+}
+
+a {
+  font-variant: small-caps;
+}
+
+h2 a {
+  font-variant: normal;
+}
+
+h3 a {
+  font-variant: normal;
 }
 
 body {
