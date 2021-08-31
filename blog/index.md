@@ -1,0 +1,4 @@
+
+# Blog posts
+
+{{blogposts}}
