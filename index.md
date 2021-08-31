@@ -4,7 +4,7 @@
 
 If you're looking for Kelvin, he's right here!
 
-This is my personal website and blog; you can think of it as a portal into the different areas of my work and life.
+This is my personal website and blog; you can think of it as a portal into the different areas of my work and life. My research revolves tying chemistry and astrophysics together with automation with machine learning and open-source programming.
 
 Here are some things that may interest you:
 
