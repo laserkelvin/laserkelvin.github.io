@@ -89,5 +89,6 @@ The sidebar `nav` contains mostly dead links right now, and I have two things to
 
 1. A projects page that requires minimal HTML; script in Julia to populate predefined HTML/CSS grid/flex to template projects showcases, including links to arXiv/repos.
 2. A CV builder scripted in Julia, that uses YAML and means I only need to store my information one format to generate HTML and printable PDF copies.
+3. Add `font-awesome` icons into the mix; should just be simple CSS additions.
 
 I haven't even touched on writing with code weaved in, nor rendering math&mdash;that's going to be a lot of fun!
