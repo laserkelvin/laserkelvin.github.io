@@ -15,7 +15,7 @@ ignore = ["node_modules/"]
 generate_rss = true
 website_title = "laserkelvin.github.io"
 website_descr = "Professional website and blog for Kelvin Lee"
-website_url   = "https://laserkeelvin.github.io/"
+website_url   = "https://laserkelvin.github.io/"
 isblog = false
 +++
 
