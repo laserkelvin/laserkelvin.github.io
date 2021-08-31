@@ -38,3 +38,13 @@ Add here global latex commands to use throughout your pages.
     <span class="sidenote" id="sn-!#1">!#2</span>
     ~~~
 }
+\newcommand{\figenv}[4]{
+~~~
+  <label for="fig-!#1" class="margin-toggle">&#8853;</label>
+  <input type="checkbox" id="mn-!#1" class="margin-toggle"/>
+  <span class="marginnote">!#2</span>
+  <figure>
+    <img src="!#3" alt="fig-!#1" style="!#4">
+  </figure>
+~~~
+}
