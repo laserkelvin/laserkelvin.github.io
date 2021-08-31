@@ -1,4 +1,4 @@
-Sitemap: https://laserkeelvin.github.io/sitemap.xml
+Sitemap: https://laserkelvin.github.io/sitemap.xml
 
 User-agent: *
 Disallow:
