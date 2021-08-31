@@ -40,10 +40,10 @@ Add here global latex commands to use throughout your pages.
 }
 \newcommand{\figenv}[4]{
     ~~~
-    <label for="fig-!#1" class="margin-toggle">&#8853;</label>
-    <input type="checkbox" id="mn-!#1" class="margin-toggle"/>
-    <span class="marginnote">!#2</span>
-    <figure>
+    <figure class="fullwidth">
+      <label for="fig-!#1" class="margin-toggle">&#8853;</label>
+      <input type="checkbox" id="mn-!#1" class="margin-toggle"/>
+      <span class="marginnote">!#2</span>
       <img src="!#3" alt="fig-!#1" style="!#4">
     </figure>
     ~~~

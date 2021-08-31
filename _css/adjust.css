@@ -36,6 +36,10 @@ html {
   font-size: clamp(12px, 12px + 0.1vw, 5vw);
 }
 
+body {
+  background-color: var(--bg-color);
+}
+
 a {
   font-variant: small-caps;
 }
