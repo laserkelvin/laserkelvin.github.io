@@ -1,4 +1,4 @@
-@def title = "laserkelvi.github.io"
+@def title = "laserkelvin.github.io"
 
 # Frontmatter
 
