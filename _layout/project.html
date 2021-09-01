@@ -1,0 +1,33 @@
+<h1>{{fill title}}</h1>
+{{isdef project_image}}
+<figure class="fullwidth">
+    {{isdef abstract}}
+    <label for="img-{{fill project_image}}" class="margin-toggle">&#8853;</label>
+    <input type="checkbox" id="mn-{{fill project_image}}" class="margin-toggle"/>
+    <span class="marginnote">{{fill abstract}}</span>
+    {{end}}
+    <img src="/assets/projects/{{fill project_image}}" alt="img-{{fill project_image}}">
+</figure>
+{{else}}
+{{isdef abstract}}
+<div class="epigraph">
+    <blockquote>
+        <p>{{fill abstract}}</p>
+    </blockquote>
+</div>
+{{end}}
+{{end}}
+<div class="flex-container">
+    <div class="grid-row">
+        {{isdef git}}
+        <div class="grid-item-4">
+            <a href="https://github.com/{{fill git}}"><i class="ai ai-arxiv"> {{fill git}}</i></a>
+        </div>
+        {{end}}
+        {{isdef arxiv}}
+        <div class="grid-item-4">
+            <a href="https://arxiv.org/abs/{{fill arxiv}}"><i class="ai ai-arxiv">{{fill arxiv}}</i></a>
+        </div>
+        {{end}}
+    </div>
+</div>

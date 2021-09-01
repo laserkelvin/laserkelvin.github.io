@@ -58,3 +58,11 @@ function hfun_blogposts()
     r = Franklin.fd2html(String(take!(io)), internal=true)
     return r
 end
+
+function hfun_projects()
+    for file in readdir("projects")
+        if occursin("md", file)
+            println(file)
+        end
+    end
+end

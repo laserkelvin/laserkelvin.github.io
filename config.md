@@ -48,3 +48,13 @@ Add here global latex commands to use throughout your pages.
     </figure>
     ~~~
 }
+\newcommand{\gh}[1]{
+    ~~~
+    <a href="https://github.com/!#1"><i class="fa fa-github"></i><p>!#1</p></a>
+    ~~~
+}
+\newcommand{\arxiv}[1]{
+    ~~~
+    <a href="https://arxiv.org/abs/!#1"><i class="ai ai-arxiv"></i><p>!#1</p></a>
+    ~~~
+}

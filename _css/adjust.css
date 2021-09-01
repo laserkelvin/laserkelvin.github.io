@@ -66,6 +66,33 @@ p {
   letter-spacing: 0.04em;
 }
 
+.flex-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.grid-item-4 {
+  flex-basis: 25%;
+  -ms-flex: auto;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.grid-item-5 {
+  flex-basis: 20%;
+  -ms-flex: auto;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
 #menu ul {
   text-align: center;
   margin: 0;
