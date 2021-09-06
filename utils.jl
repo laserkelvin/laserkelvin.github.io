@@ -60,9 +60,18 @@ function hfun_blogposts()
 end
 
 function hfun_projects()
-    for file in readdir("projects")
-        if occursin("md", file)
-            println(file)
+    lines = []
+    io = IOBuffer()
+    for (root, dirs, files) in walkdir("projects")
+        for dir in dirs
+            path = "/projects/$dir/index/"
+            title = pagevar(strip(path, '/'), :title)
+            abstract = pagevar(strip(path, '/'), :abstract)
+            url = join([path, ".html"])
+            line = "\n[$title]($url) \n $abstract \n"
+            push!(lines, line)
         end
     end
+    foreach(line -> write(io, line), lines)
+    r = Franklin.fd2html(String(take!(io)), internal=true)
 end
