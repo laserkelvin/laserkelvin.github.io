@@ -58,3 +58,13 @@ Add here global latex commands to use throughout your pages.
     <a href="https://arxiv.org/abs/!#1"><i class="ai ai-arxiv"></i><p>!#1</p></a>
     ~~~
 }
+\newcommand{\quote}[2]{
+    ~~~
+    <div class="epigraph">
+      <blockquote>
+        <p>!#1<p>
+        <footer>!#2</footer>
+      </blockquote>
+    </div>
+    ~~~
+}
