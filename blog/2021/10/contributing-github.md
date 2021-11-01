@@ -1,12 +1,12 @@
 
-@def title = "Contributing to open-source with `git` and Github"
+@def title = "Introducing version control to scientists"
 @def tags = ["open-source", "programming", "git"]
 @def isblog = true
 @def showall = true
 
-# Conceptual introduction to version control
+# A Conceptual and Practical introduction to version control
 
-### An introduction to scientists
+### For the dedicated scientist
 
 I would say that the majority of modern science benefits significantly from open-source programs: routines that are freely available for research use, including a transparent code base allowing you to freely inspect and modify it for your own purposes. The great thing with this kind of paradigm is that you can benefit from open-source, and others can benefit from *your* code being open-source&mdash;anyone can stand on your shoulders! 😃
 
