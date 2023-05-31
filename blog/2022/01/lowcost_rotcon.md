@@ -94,11 +94,11 @@ This will perform vibration-rotation analysis (to get __harmonic__ $\alpha$ valu
 While centrifugal distortion terms are given in both _A_ and _S_ reductions, the representation
 is actaully inferred by the calculation and often _not_ the one you want. This will make a
 significant difference in the sign—and to a lesser extent magnitude—of your distortion terms
-(e.g. $$d_1$$ and $$d_2$$ are flipped in sign).
+(e.g. $d_1$ and $d_2$ are flipped in sign).
 
 The procedure to change this is carried out after you've done an anharmonic calculation, i.e.
 `Freq=Anharm`. You can subsequently provide a `ITop` keyword that then lets you specify
-$$\mathrm{I_{r/l}-III_{r/l}}$$ representations, and have the calculation read in all of the
+$\mathrm{I_{r/l}-III_{r/l}}$ representations, and have the calculation read in all of the
 force constants. _This should not require any significant re-calculation_.
 
 ```
@@ -114,7 +114,7 @@ Print=ITop=Ir
 
 Where you have a `calc.chk` file containing the previous anharmonic calculation and structure.
 The calculation will read in the geometry from the checkpoint file, and the `Print=Itop=Ir`
-changes the representation explicitly to $$\mathrm{I_r}$$. _Note the blank lines!_
+changes the representation explicitly to $\mathrm{I_r}$. _Note the blank lines!_
 
 ## Rare isotopic calculations
 
@@ -126,7 +126,7 @@ Although the `Output=Pickett` keyword formats the result nicely, there are cases
 output electric properties are not in the right orientation. Whatever you do, _check the
 dipole moment values_ to make sure they are what you expect. Here's an example of a goofy result
 on the PhC<sub>3</sub>N molecule, which is a near-prolate top with only one permanent dipole moment
-along the $$a$$ axis. Normally, you would put the dipole axis ordering to be $$x=a, y=b, z=c$$,
+along the $a$ axis. Normally, you would put the dipole axis ordering to be $x=a, y=b, z=c$,
 however as seen in the following calculation the axes are swapped:
 
 ```
@@ -142,10 +142,10 @@ Rotational constants (MHZ):
  Atoms with significant hyperfine tensors:  N15-14
 ```
 
-The consequence is that the quadrupole coupling is also messed up. $$\chi_{aa}$$ should be
-the projection of the nitrogen quadrupole moment along the $$a$$-axis, and for cyanide groups 
-this value is typically around -4.5 MHz, which actually turns out to be labelled $$\chi_{cc}$$.
-So this is a case of Gaussian messing up the labels, and calling the $$c$$-axis properties $$a$$.
+The consequence is that the quadrupole coupling is also messed up. $\chi_{aa}$ should be
+the projection of the nitrogen quadrupole moment along the $a$-axis, and for cyanide groups 
+this value is typically around -4.5 MHz, which actually turns out to be labelled $\chi_{cc}$.
+So this is a case of Gaussian messing up the labels, and calling the $c$-axis properties $a$.
 Chemical unintuition!
 
 ---
