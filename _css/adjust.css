@@ -165,3 +165,7 @@ p {
 @media (min-width: 1000px) {
   .franklin-content { width: 660px; }
 }
+
+h2 {
+    font-style: normal;
+}
