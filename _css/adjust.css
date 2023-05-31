@@ -4,13 +4,15 @@
 
 :root {
   --block-background: rgb(82, 80, 80);
-  --bg-color: #403F3F;
-  --primary-color: #CACACA;
-  --secondary-color: #F2930C
+  --bg-color: #F0DCCA;
+  --primary-color: #001011;
+  --secondary-color: #093A3E;
+  --link-color: #713E5A;
 }
 
 .page-foot {
   font-family: et-book;
+  color: var(--secondary-color)
 }
 
 .franklin-content code {
@@ -38,6 +40,11 @@ html {
 
 body {
   background-color: var(--bg-color);
+  font-family: "Lato", Palatino
+}
+
+code {
+    background-color: var(--bg-color)
 }
 
 a {
@@ -94,7 +101,7 @@ p {
 }
 
 #menu ul li a {
-  color: #F2930C;
+  color: var(--link-color);
   text-decoration: none;
   position: relative;
   padding: 10px 10px;
@@ -157,4 +164,8 @@ p {
 
 @media (min-width: 1000px) {
   .franklin-content { width: 660px; }
+}
+
+h2 {
+    font-style: normal;
 }
