@@ -2,56 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
+    <loc>https://laserkelvin.github.io/blog/2021/08/site-creation/index.html</loc>
+    <lastmod>2023-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://laserkelvin.github.io/about/index.html</loc>
-    <lastmod>2023-05-31</lastmod>
+    <lastmod>2023-12-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://laserkelvin.github.io/blog/2022/01/lowcost_rotcon/index.html</loc>
-    <lastmod>2023-05-31</lastmod>
+    <lastmod>2023-12-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://laserkelvin.github.io/projects/umda/index.html</loc>
-    <lastmod>2023-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://laserkelvin.github.io/blog/index.html</loc>
-    <lastmod>2023-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://laserkelvin.github.io/blog/2021/08/site-creation/index.html</loc>
-    <lastmod>2023-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://laserkelvin.github.io/projects/index.html</loc>
-    <lastmod>2023-05-31</lastmod>
+    <loc>https://laserkelvin.github.io/blog/2023/12/bios-flash/index.html</loc>
+    <lastmod>2023-12-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://laserkelvin.github.io/blog/2021/09/vicreg/index.html</loc>
-    <lastmod>2023-05-31</lastmod>
+    <lastmod>2023-12-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://laserkelvin.github.io/blog/2021/10/contributing-github/index.html</loc>
-    <lastmod>2023-05-31</lastmod>
+    <lastmod>2023-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://laserkelvin.github.io/blog/index.html</loc>
+    <lastmod>2023-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://laserkelvin.github.io/projects/index.html</loc>
+    <lastmod>2023-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://laserkelvin.github.io/projects/umda/index.html</loc>
+    <lastmod>2023-12-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://laserkelvin.github.io/index.html</loc>
-    <lastmod>2023-05-31</lastmod>
+    <lastmod>2023-12-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
