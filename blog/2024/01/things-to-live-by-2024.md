@@ -2,6 +2,9 @@
 @def tags = ["essays", "general", "perspective", "productivity"]
 @def isblog = true
 @def showall = true
+@def rss_pubdate = Date(2024, 1, 1)
+@def rss_title = "Things to live by in 2024"
+@def rss_description = "A letter to future to serve as a reminder to recenter myself throughout 2024."
 
 # {{fill title}}
 

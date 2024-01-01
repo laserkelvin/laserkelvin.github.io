@@ -14,8 +14,9 @@ ignore = ["node_modules/"]
 # RSS (the website_{title, descr, url} must be defined to get RSS)
 generate_rss = true
 website_title = "laserkelvin.github.io"
-website_descr = "Professional website and blog for Kelvin Lee"
+website_descr = "A healthy mixture of professional and personal website and blog for Kelvin Lee"
 website_url   = "https://laserkelvin.github.io/"
+rss_full_content = true
 isblog = false
 +++
 
