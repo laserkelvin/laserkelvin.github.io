@@ -64,7 +64,7 @@ function hfun_projects()
     io = IOBuffer()
     for (root, dirs, files) in walkdir("projects")
         for dir in dirs
-            path = "/projects/$dir/index/"
+            path = "/projects/$dir/index"
             title = pagevar(strip(path, '/'), :title)
             abstract = pagevar(strip(path, '/'), :abstract)
             url = join([path, ".html"])
