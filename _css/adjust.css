@@ -169,3 +169,7 @@ p {
 h2 {
     font-style: normal;
 }
+
+blockquote > p {
+  color: #fff
+}
