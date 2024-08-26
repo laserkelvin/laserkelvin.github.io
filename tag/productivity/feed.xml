@@ -36,19 +36,15 @@
 <p>Lately, I&#39;ve been increasingly using language models to help automate some of the nitty gritty stuff, including setting up a workflow for <a href="https://laserkelvin.github.io/research-paper-summaries">automating paper summarization</a>, and <em>some</em> assistance with misc. coding and productivity tasks.</p>
 <p>While the models that can be served on a client CPU/GPU have substantially improved in the last two years, I&#39;ve found that they&#39;re still not quite at the point where they are reliable enough for me to pass more critical tasks. I still write all of my code, and even with RAG the paper summaries can be either very impressive &#40;pulling out specific figures and references&#41;, or on the other hand, <a href="https://en.wikipedia.org/wiki/Not_even_wrong">not even wrong</a>. In the former case it might just be a matter of coding style not meeting what I&#39;d like, but I would like to still try and continue to use LLMs where I find it comfortable to do so, which concretely translates to:</p>
 <ol>
-<li><p>Sufficient automation/relieves my cognitive load. It doesn&#39;t make sense for me to</p>
+<li><p>Sufficient automation/relieves my cognitive load. It doesn&#39;t make sense for me to have an assistant where I don&#39;t trust their work, and I end up spending more time turning something unusable into something useful.</p>
 </li>
-</ol>
-<p>have an assistant where I don&#39;t trust their work, and I end up spending more time turning something unusable into something useful.</p>
-<ol start="2">
-<li><p>Fits into my natural workflow: I code more or less exclusively in Neovim now, to</p>
-</li>
-</ol>
-<p>the point that using VSCode is actually quite jarring because of how I&#39;ve managed to tweak Neovim how I want it.
+<li><p>Fits into my natural workflow: I code more or less exclusively in Neovim now, to the point that using VSCode is actually quite jarring because of how I&#39;ve managed to tweak Neovim how I want it.
     <label for="sn-1" class="margin-toggle sidenote-number"></label>
     <input type="checkbox" id="mn-1" class="margin-toggle"/>
     <span class="sidenote" id="sn-1">It's not just vim-bindings, it's the whole plugin ecosystem! More on that in a post sometime.</span>
     </p>
+</li>
+</ol>
 <h2 id="docstring_generation">Docstring generation</h2>
 <p>Something that seems to fit squarely in this island of stability is docstring writing. In Neovim, I have the <code>nvim-llama</code> plugin that will start an <code>Ollama</code> container when I it, and I can access a chat prompt with the instruction fine-tuned Llama 3.1 8B. My workflow consists of writing code, and using the following prompt:</p>
 <blockquote>
