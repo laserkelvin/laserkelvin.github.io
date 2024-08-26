@@ -20,12 +20,8 @@ other hand, [not even wrong](https://en.wikipedia.org/wiki/Not_even_wrong). In t
 of coding style not meeting what I'd like, but I would like to still try and continue to use LLMs
 where I find it comfortable to do so, which concretely translates to:
 
-1. Sufficient automation/relieves my cognitive load. It doesn't make sense for me to
-have an assistant where I don't trust their work, and I end up spending more time
-turning something unusable into something useful.
-2. Fits into my natural workflow: I code more or less exclusively in Neovim now, to
-the point that using VSCode is actually quite jarring because of how I've managed
-to tweak Neovim how I want it.\sidenote{1}{It's not just vim-bindings, it's the whole plugin ecosystem! More on that in a post sometime.}
+1. Sufficient automation/relieves my cognitive load. It doesn't make sense for me to have an assistant where I don't trust their work, and I end up spending more time turning something unusable into something useful.
+2. Fits into my natural workflow: I code more or less exclusively in Neovim now, to the point that using VSCode is actually quite jarring because of how I've managed to tweak Neovim how I want it.\sidenote{1}{It's not just vim-bindings, it's the whole plugin ecosystem! More on that in a post sometime.}
 
 ## Docstring generation
 
