@@ -23,6 +23,83 @@
 
 <item>
   <title>
+    <![CDATA[  Handy language model prompts for productivity  ]]>
+  </title>
+  <link> https://laserkelvin.github.io/blog/2024/08/useful-prompts/index.html </link>
+  <guid> https://laserkelvin.github.io/blog/2024/08/useful-prompts/index.html </guid>
+  <description>
+    <![CDATA[  A letter to future to serve as a reminder to recenter myself throughout 2024.  ]]>
+  </description>  
+  
+  <content:encoded>
+    <![CDATA[  <h1 id="fill_title">Handy language model prompts for productivity</h1>
+<p>Lately, I&#39;ve been increasingly using language models to help automate some of the nitty gritty stuff, including setting up a workflow for <a href="https://laserkelvin.github.io/research-paper-summaries">automating paper summarization</a>, and <em>some</em> assistance with misc. coding and productivity tasks.</p>
+<p>While the models that can be served on a client CPU/GPU have substantially improved in the last two years, I&#39;ve found that they&#39;re still not quite at the point where they are reliable enough for me to pass more critical tasks. I still write all of my code, and even with RAG the paper summaries can be either very impressive &#40;pulling out specific figures and references&#41;, or on the other hand, <a href="https://en.wikipedia.org/wiki/Not_even_wrong">not even wrong</a>. In the former case it might just be a matter of coding style not meeting what I&#39;d like, but I would like to still try and continue to use LLMs where I find it comfortable to do so, which concretely translates to:</p>
+<ol>
+<li><p>Sufficient automation/relieves my cognitive load. It doesn&#39;t make sense for me to</p>
+</li>
+</ol>
+<p>have an assistant where I don&#39;t trust their work, and I end up spending more time turning something unusable into something useful.</p>
+<ol start="2">
+<li><p>Fits into my natural workflow: I code more or less exclusively in Neovim now, to</p>
+</li>
+</ol>
+<p>the point that using VSCode is actually quite jarring because of how I&#39;ve managed to tweak Neovim how I want it.
+    <label for="sn-1" class="margin-toggle sidenote-number"></label>
+    <input type="checkbox" id="mn-1" class="margin-toggle"/>
+    <span class="sidenote" id="sn-1">It's not just vim-bindings, it's the whole plugin ecosystem! More on that in a post sometime.</span>
+    </p>
+<h2 id="docstring_generation">Docstring generation</h2>
+<p>Something that seems to fit squarely in this island of stability is docstring writing. In Neovim, I have the <code>nvim-llama</code> plugin that will start an <code>Ollama</code> container when I it, and I can access a chat prompt with the instruction fine-tuned Llama 3.1 8B. My workflow consists of writing code, and using the following prompt:</p>
+<blockquote>
+<p>You are a helpful AI assistant that specializes in generating high-quality docstrings for Python code functions.  Your task is to create docstrings that are:</p>
+<ul>
+<li><p>Accurate: Cover functionality, parameters, return values, and exceptions.</p>
+</li>
+<li><p>Concise: Brief and to the point, focusing on essential information.</p>
+</li>
+<li><p>Clear: Use simple language and avoid ambiguity.</p>
+</li>
+<li><p>Style: You must use NumPy style docstrings. When type hints/annotations are available, you must respect and use them.</p>
+</li>
+<li><p>Examples: Give examples in the docstring that demonstrate how the function should be used.</p>
+</li>
+<li><p>Generate docstring in this format:</p>
+</li>
+</ul>
+<p>&quot;&quot;&quot;&lt;generated docstring&gt;&quot;&quot;&quot;.</p>
+<p>The code snippet is given below:</p>
+</blockquote>
+<p>The prompt was largely taken from <a href="https://arxiv.org/html/2405.10243v1">arXiv:2405.10243v1</a>, but I&#39;ve added my own flair because I use NumPy style docstrings, and added the note for it to use type hints and annotations.</p>
+<h2 id="simple_tasks">Simple tasks</h2>
+<p>This kind of code generation is when it is faster to ask an LLM to do something in a language I don&#39;t use every day: good examples are <code>regex</code> and some kinds of shell tasks &#40;weirdly, I never got too much into <code>bash</code> hacking&#41;.</p>
+<blockquote>
+<p>You are a senior software engineer with many decades of experience working in shell prompts. You have been asked to provide a short script in a specified language to perform one task. As part of your response, you must abide by the following rules:</p>
+<ul>
+<li><p>Unless otherwise specified, use only the programming languages specified. Exceptions to this rule include cases like front and backend solutions &#40;e.g. CSS/HTML/Javascript&#41;.</p>
+</li>
+<li><p>Your response should be to the point; do not use greetings, filler, or engage in friendly conversation.</p>
+</li>
+<li><p>Try and keep the complexity of your snippet relatively low: it should be short but easily grokked.</p>
+</li>
+<li><p>Provide your response in a code block format, with the language annotated.</p>
+</li>
+</ul>
+</blockquote>
+ ]]>
+  </content:encoded>
+    
+  <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Kelvin Lee</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
     <![CDATA[  Things to live by in 2024  ]]>
   </title>
   <link> https://laserkelvin.github.io/blog/2024/01/things-to-live-by-2024/index.html </link>
