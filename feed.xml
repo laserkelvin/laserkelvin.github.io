@@ -23,6 +23,84 @@
 
 <item>
   <title>
+    <![CDATA[  Using LLMs for daily tasks  ]]>
+  </title>
+  <link> https://laserkelvin.github.io/blog/2024/12/obsidian-smart-workflow/index.html </link>
+  <guid> https://laserkelvin.github.io/blog/2024/12/obsidian-smart-workflow/index.html </guid>
+  <description>
+    <![CDATA[  Notes on how to configure Obsidian and Neovim for LLM use  ]]>
+  </description>  
+  
+  <content:encoded>
+    <![CDATA[  <h1 id="fill_title">Using LLMs for daily tasks</h1>
+<p>I&#39;ve recently had the time of day to start playing around with incorporating LLMs into my usual workflows in earnest. Even though projects like <code>ollama</code> really lowered the bar of hosting LLMs, it&#39;s taken me a while of playing around with a variety of frontends and workflows such as Open WebUI to figure out exactly how exactly I want to use a locally hosted model for myself.</p>
+<p>The effective problem statement is something like this: I use <code>nvim</code> for coding, and actually until quite recently, even for my notetaking with Telekasten.
+    <label for="sn-1" class="margin-toggle sidenote-number"></label>
+    <input type="checkbox" id="mn-1" class="margin-toggle"/>
+    <span class="sidenote" id="sn-1">Nothing was wrong
+with telekasten as a plugin; I never really got the hang of retrieval (i.e. finding the
+note I needed at the right time. Maybe it's more intuitive for others, but I never really
+had the time to practice.)</span>
+     I&#39;ve since now moved to Obsidian for my notetaking, and it&#39;s been a pretty good experience so far. Thus, if I want to use an LLM for productivity, I would have to figure out how to serve both <code>nvim</code> and Obsidian.</p>
+<h2 id="setup">Setup</h2>
+<p>One of the big hurdles that I had to get over was actually not messing around with <code>docker-compose</code>. Normally, this would be the way I would go because it&#39;s the self-hosting way, but it introduced complexity that was really not needed to have to deal with ports, uptime, availability, etc. Instead, I finally got over myself and just installed it with the incredibly well packaged command given by the developers:</p>
+<pre><code class="language-console">curl -fsSL https://ollama.com/install.sh | sh</code></pre>
+<p>...this worked instantly on Manjaro, even creating a user group and installing it as a <code>systemctl</code> service which meant that I don&#39;t have to deal with ports, <code>ollama</code> will always be running as a background service
+    <label for="sn-2" class="margin-toggle sidenote-number"></label>
+    <input type="checkbox" id="mn-2" class="margin-toggle"/>
+    <span class="sidenote" id="sn-2">If you were ever worried about taking up GPU memory like I was,
+`ollama` actually clears unused models from memory after five minutes. It'll also handle loading
+and unloading weights when switching between models.</span>
+    , and every &quot;frontend&quot; I use can just map to the same server and model set. Clearly this was the design intention, but I liked to keep my system/service relatively clean, and I tend to overthink things.</p>
+<p>I was then able to just run <code>ollama pull &lt;model_name&gt;</code>.</p>
+<h2 id="llm_use_for_coding">LLM use for coding</h2>
+<p>I&#39;ve been using <code>qwen2.5-coder:7b-instruct-q5_K_S</code> as a coding assistant. I&#39;ve found it to be somewhat adequate, albeit a little verbose. It is actually significantly better than the Llama 3.1 instruct models I&#39;ve used previously for coding, especially in terms of the quality of docstrings produced by the models.</p>
+<p>In <code>nvim</code>, <a href="https://github.com/olimorris/codecompanion.nvim/tree/main"><code>codecompanion.nvim</code></a> has been a straightforward install and configure to use the background <code>ollama</code> service, needing just a little bit of tinkering to use <code>ollama</code> instead of the default ChatGPT remote service. Essentially, in addition to adding it to <code>lazy.nvim</code> as a dependency, I added a <code>~/.config/nvim/lua/config/companion.lua</code> file that then configures the &quot;strategy&quot; and &quot;adapters&quot;:</p>
+<pre><code class="language-lua">require&#40;&quot;codecompanion&quot;&#41;.setup&#40;
+  &#123;
+    strategies &#61; &#123;
+      chat &#61; &#123;
+        adapter &#61; &quot;ollama&quot;
+      &#125;,
+      inline &#61; &#123;
+        adapter &#61; &quot;ollama&quot;
+      &#125;
+    &#125;,
+    adapters &#61; &#123;
+    ollama &#61; function&#40;&#41;
+      return require&#40;&quot;codecompanion.adapters&quot;&#41;.extend&#40;&quot;ollama&quot;, &#123;
+        name &#61; &quot;qwen2.5-coder&quot;,
+        schema &#61; &#123;
+          model &#61; &#123;
+            default &#61; &quot;qwen2.5-coder:7b-instruct-q5_K_S&quot;
+          &#125;,
+          num_ctx &#61; &#123;
+            default &#61; 64000
+          &#125;
+        &#125;,
+      &#125;&#41;
+    end,
+    &#125;,
+&#125;&#41;</code></pre>
+<p>This uses the same <code>ollama</code> model for both inline and chat completion tasks. As mentioned already, I&#39;ve used this for docstring generation &#40;The <code>&lt;C-a&gt;</code> keymap opens a chat window that I can just paste a function&#39;s worth to generate at a time&#41;, and because the model is so lightweight, generation is more or less instantaneous. Sometimes I do need to remind it to generate <strong>NumPy</strong> style docstrings, as it generates something close but not exactly correct in the argument type descriptions.</p>
+<h2 id="obsidian_smart_brain">Obsidian Smart brain</h2>
+<p>For notetaking, doing retrieval augmented generation &#40;RAG&#41; has been <strong>significantly</strong> more straightforward for information retrieval in my &#40;limited&#41; experience. I use <code>nomic-embed-text</code>, again provided by <code>ollama</code>, to index notes, and use <code>llama3.2:3b</code> for chat generation. The small model is incredibly quick on my dGPU, and will generate responses much faster than I can read them. The relevance and usefulness of the responses can vary, but I&#39;ve been pretty impressed so far when I ask questions about specific things I know exist in my notes so far. This functionality is provided by <a href="https://github.com/your-papa/obsidian-Smart2Brain"><code>obsidian-Smart2Brain</code></a>, which lets you configure <code>ollama</code> as the LLM backend for embeddings and for generation.</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>I&#39;ll follow up a bit more as I get the hang of the workflows, but I&#39;m pretty keen to add more slash commands and utilities to <code>nvim</code> for my coding productivity. As far as notetaking goes, the plugin I&#39;m using now doesn&#39;t seem to provide an avenue for <em>workflows</em> &#40;i.e. agents&#41; just yet, but I&#39;m thinking of a few areas beyond autotagging and RAG; how do I improve my <strong>learning</strong> with LLM assistants?</p>
+ ]]>
+  </content:encoded>
+    
+  <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Kelvin Lee</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
     <![CDATA[  Handy language model prompts for productivity  ]]>
   </title>
   <link> https://laserkelvin.github.io/blog/2024/08/useful-prompts/index.html </link>
